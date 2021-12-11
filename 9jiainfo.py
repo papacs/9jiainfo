@@ -13,8 +13,8 @@ def job():
     res = re.match("<span[^>]*>",c)
     print(res)
     # WebHook地址
-    webhook = 'https://oapi.dingtalk.com/robot/send?access_token=62d1d50be827620e9d4f60c4176d45a8ba782a55b0d4ef4db6f83841496bc2eb'
-    secret = 'SEC03aa8dc5345a448f8cf01899547945444cdfdfcc2686b2eea0f0f2bd2ab6f87a'  # 可选：创建机器人勾选“加签”选项时使用
+    webhook = 'https://oapi.dingtalk.com/robot/send?access_token=xxx'
+    secret = 'SECxxx'  # 可选：创建机器人勾选“加签”选项时使用
     # 初始化机器人小丁
     # xiaoding = DingtalkChatbot(webhook)  # 方式一：通常初始化方式
     xiaoding = DingtalkChatbot(webhook, secret=secret)  # 方式二：勾选“加签”选项时使用（v1.5以上新功能）
