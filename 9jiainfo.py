@@ -7,7 +7,6 @@ from dingtalkchatbot.chatbot import DingtalkChatbot
 from colorama import *
 
 def job():
-<<<<<<< HEAD
     try:
         citycode = sys.argv[1]
         print(Fore.GREEN + '输入的地区代码为: ' + citycode)
@@ -39,21 +38,6 @@ def push():
     # WebHook地址
     webhook = 'https://oapi.dingtalk.com/robot/send?access_token=xxx'
     secret = 'xxx'  # 可选：创建机器人勾选“加签”选项时使用
-=======
-
-    command = 'curl -H "Host: wxapidg.bendibao.com" -H "content-type: application/json" -H "User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 15_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.16(0x18001034) NetType/4G Language/zh_CN" -H "Referer: https://servicewechat.com/wx2efc0705600eb6db/130/page-frame.html" --compressed "https://wxapidg.bendibao.com/smartprogram/zhuanti.php?platform=wx&version=21.12.06&action=jiujia&citycode=cd"'
-    a = os.popen(command)
-    b = a.read()
-    c = b.encode('utf-8').decode('unicode_escape')
-    res = re.match("<span[^>]*>",c)
-    print(res)
-    # WebHook地址
-    webhook = 'https://oapi.dingtalk.com/robot/send?access_token=xxx'
-    secret = 'SECxxx'  # 可选：创建机器人勾选“加签”选项时使用
-<<<<<<< Updated upstream
-=======
->>>>>>> 518652252ad5482a3dd08b49dac9df7fc6853ac7
->>>>>>> Stashed changes
     # 初始化机器人小丁
     # xiaoding = DingtalkChatbot(webhook)  # 方式一：通常初始化方式
     xiaoding = DingtalkChatbot(webhook, secret=secret)  # 方式二：勾选“加签”选项时使用（v1.5以上新功能）
