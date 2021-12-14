@@ -3,14 +3,21 @@
 
 
 ## 效果
+![](assets/16394810119386.jpg)
 
-![](/Users/m0nk3y/Library/Application Support/typora-user-images/image-20211212111406130.png)
+
+
+
 
 电脑端
-![](/Users/m0nk3y/Library/Application Support/typora-user-images/image-20211212111448252.png)
+![](assets/16394810760911.jpg)
+
+
 
 手机端
-![](/Users/m0nk3y/Library/Application Support/typora-user-images/image-20211212111600539.png)
+![](assets/16394810587687.jpg)
+
+
 
 配置
 
@@ -48,17 +55,23 @@ git pull
 
 - V0.0.2 修改信息源，即更新请求的URL
 - V0.0.3 
-  - 增加内容更新判断，如果信息未更新推送不更新或者不推送
+  - 增加内容更新判断
+
   - 增加地区选择
 
-
-
+- V0.0.4
+    - 增加休息功能
+    - 简化内容
+    
 ## 问题
 
 - 欢迎提交issues，贴上完整的报错以及截图
 
 ## Todo
 
-- [x] 内容更新判读
 
-- [ ] 简化内容(格式化获取到的内容)
+
+- [x] 内容更新判断
+- [x] 地区选择
+- [x] 增加休息功能，22点到8点不推送 
+- [x] 简化内容(格式化获取到的内容)
